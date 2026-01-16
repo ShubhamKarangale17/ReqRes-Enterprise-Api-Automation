@@ -1,0 +1,2390 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+...
+... TestNG 7.9.0 by Cédric Beust (cedric@beust.com)
+...
+
+2026-01-15 20:23:32.390 [main] INFO  com.reqres.tests.LoginAPITest - Starting test: Login response structure validation
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "cityslicka",
+    "email": "eve.holt@reqres.in"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:34 GMT
+Content-Type: application/json
+Content-Length: 598
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\"password\":\"cityslicka\",\"email\":\"eve.holt@reqres.in\"}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "54",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff6e-1fcc8bfe59e9ecfa2186eb35"
+    },
+    "json": {
+        "email": "eve.holt@reqres.in",
+        "password": "cityslicka"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:23:36.082 [main] INFO  com.reqres.tests.LoginAPITest - Test passed: Login response structure is valid
+2026-01-15 20:23:36.088 [main] INFO  com.reqres.tests.LoginAPITest - Starting test: Login with empty credentials
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:37 GMT
+Content-Type: application/json
+Content-Length: 469
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "2",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff70-7a0f9738030c896154f13e71"
+    },
+    "json": {
+        
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:23:38.402 [main] INFO  com.reqres.tests.LoginAPITest - Response Status Code: 200
+2026-01-15 20:23:38.402 [main] INFO  com.reqres.tests.LoginAPITest - Response Body: {
+  "args": {}, 
+  "data": "{}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "2", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)", 
+    "X-Amzn-Trace-Id": "Root=1-6968ff70-7a0f9738030c896154f13e71"
+  }, 
+  "json": {}, 
+  "origin": "42.104.218.61", 
+  "url": "https://httpbin.org/post"
+}
+
+2026-01-15 20:23:38.403 [main] INFO  com.reqres.tests.LoginAPITest - Test passed: Login with empty credentials returns 200
+2026-01-15 20:23:38.405 [main] INFO  com.reqres.tests.LoginAPITest - Starting test: Login with valid credentials
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "cityslicka",
+    "email": "eve.holt@reqres.in"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:39 GMT
+Content-Type: application/json
+Content-Length: 598
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\"password\":\"cityslicka\",\"email\":\"eve.holt@reqres.in\"}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "54",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff73-3c20d1200571ca2c66a74a57"
+    },
+    "json": {
+        "email": "eve.holt@reqres.in",
+        "password": "cityslicka"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:23:40.669 [main] INFO  com.reqres.tests.LoginAPITest - Response Status Code: 200
+2026-01-15 20:23:40.669 [main] INFO  com.reqres.tests.LoginAPITest - Response Body: {
+  "args": {}, 
+  "data": "{\"password\":\"cityslicka\",\"email\":\"eve.holt@reqres.in\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "54", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)", 
+    "X-Amzn-Trace-Id": "Root=1-6968ff73-3c20d1200571ca2c66a74a57"
+  }, 
+  "json": {
+    "email": "eve.holt@reqres.in", 
+    "password": "cityslicka"
+  }, 
+  "origin": "42.104.218.61", 
+  "url": "https://httpbin.org/post"
+}
+
+2026-01-15 20:23:40.670 [main] INFO  com.reqres.tests.LoginAPITest - Test passed: Login successful with valid credentials
+2026-01-15 20:23:40.671 [main] INFO  com.reqres.tests.LoginAPITest - Starting test: Login without password
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:41 GMT
+Content-Type: application/json
+Content-Length: 539
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\"email\":\"eve.holt@reqres.in\"}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "30",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff75-04a8917c4e0c327f5da6f31a"
+    },
+    "json": {
+        "email": "eve.holt@reqres.in"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:23:42.862 [main] INFO  com.reqres.tests.LoginAPITest - Response Status Code: 200
+2026-01-15 20:23:42.863 [main] INFO  com.reqres.tests.LoginAPITest - Response Body: {
+  "args": {}, 
+  "data": "{\"email\":\"eve.holt@reqres.in\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "30", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)", 
+    "X-Amzn-Trace-Id": "Root=1-6968ff75-04a8917c4e0c327f5da6f31a"
+  }, 
+  "json": {
+    "email": "eve.holt@reqres.in"
+  }, 
+  "origin": "42.104.218.61", 
+  "url": "https://httpbin.org/post"
+}
+
+2026-01-15 20:23:42.863 [main] INFO  com.reqres.tests.LoginAPITest - Test passed: Login without password returns 200
+2026-01-15 20:23:42.868 [main] INFO  com.reqres.tests.RegisterAPITest - Starting test: Registration response structure validation
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "pistol",
+    "email": "sydney@fife"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:43 GMT
+Content-Type: application/json
+Content-Length: 576
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\"password\":\"pistol\",\"email\":\"sydney@fife\"}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "43",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff77-1665ad0c4dac704e24379087"
+    },
+    "json": {
+        "email": "sydney@fife",
+        "password": "pistol"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:23:44.996 [main] INFO  com.reqres.tests.RegisterAPITest - Test passed: Registration response structure is valid
+2026-01-15 20:23:44.998 [main] INFO  com.reqres.tests.RegisterAPITest - Starting test: Register with empty credentials
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:45 GMT
+Content-Type: application/json
+Content-Length: 469
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "2",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff79-52b109bb0e9244ae231b301e"
+    },
+    "json": {
+        
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:23:47.066 [main] INFO  com.reqres.tests.RegisterAPITest - Response Status Code: 200
+2026-01-15 20:23:47.067 [main] INFO  com.reqres.tests.RegisterAPITest - Response Body: {
+  "args": {}, 
+  "data": "{}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "2", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)", 
+    "X-Amzn-Trace-Id": "Root=1-6968ff79-52b109bb0e9244ae231b301e"
+  }, 
+  "json": {}, 
+  "origin": "42.104.218.61", 
+  "url": "https://httpbin.org/post"
+}
+
+2026-01-15 20:23:47.067 [main] INFO  com.reqres.tests.RegisterAPITest - Test passed: Registration with empty credentials returns 200
+2026-01-15 20:23:47.069 [main] INFO  com.reqres.tests.RegisterAPITest - Starting test: Register with valid credentials
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "pistol",
+    "email": "sydney@fife"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:47 GMT
+Content-Type: application/json
+Content-Length: 576
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\"password\":\"pistol\",\"email\":\"sydney@fife\"}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "43",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff7b-2e902e622aa4ffa42d1e9a5e"
+    },
+    "json": {
+        "email": "sydney@fife",
+        "password": "pistol"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:23:49.227 [main] INFO  com.reqres.tests.RegisterAPITest - Response Status Code: 200
+2026-01-15 20:23:49.228 [main] INFO  com.reqres.tests.RegisterAPITest - Response Body: {
+  "args": {}, 
+  "data": "{\"password\":\"pistol\",\"email\":\"sydney@fife\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "43", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)", 
+    "X-Amzn-Trace-Id": "Root=1-6968ff7b-2e902e622aa4ffa42d1e9a5e"
+  }, 
+  "json": {
+    "email": "sydney@fife", 
+    "password": "pistol"
+  }, 
+  "origin": "42.104.218.61", 
+  "url": "https://httpbin.org/post"
+}
+
+2026-01-15 20:23:49.228 [main] INFO  com.reqres.tests.RegisterAPITest - Test passed: Registration successful with valid credentials
+2026-01-15 20:23:49.229 [main] INFO  com.reqres.tests.RegisterAPITest - Starting test: Register without password
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "sydney@fife"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:50 GMT
+Content-Type: application/json
+Content-Length: 525
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\"email\":\"sydney@fife\"}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "23",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff7e-07ec77217b29d4466d5845ac"
+    },
+    "json": {
+        "email": "sydney@fife"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:23:51.556 [main] INFO  com.reqres.tests.RegisterAPITest - Response Status Code: 200
+2026-01-15 20:23:51.557 [main] INFO  com.reqres.tests.RegisterAPITest - Response Body: {
+  "args": {}, 
+  "data": "{\"email\":\"sydney@fife\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "23", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)", 
+    "X-Amzn-Trace-Id": "Root=1-6968ff7e-07ec77217b29d4466d5845ac"
+  }, 
+  "json": {
+    "email": "sydney@fife"
+  }, 
+  "origin": "42.104.218.61", 
+  "url": "https://httpbin.org/post"
+}
+
+2026-01-15 20:23:51.557 [main] INFO  com.reqres.tests.RegisterAPITest - Test passed: Registration without password returns 200
+2026-01-15 20:23:51.559 [main] INFO  com.reqres.tests.GetUsersAPITest - Starting test: Get all users from default page
+Request method:	GET
+Request URI:	https://httpbin.org/get
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:52 GMT
+Content-Type: application/json
+Content-Length: 377
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff80-35915bfe149962be3cfec64d"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/get"
+}
+2026-01-15 20:23:53.909 [main] INFO  com.reqres.tests.GetUsersAPITest - Response Status Code: 200
+2026-01-15 20:23:53.909 [main] INFO  com.reqres.tests.GetUsersAPITest - Test passed: Retrieved users from default page
+2026-01-15 20:23:53.910 [main] INFO  com.reqres.tests.GetUsersAPITest - Starting test: Get all users from specific page
+Request method:	GET
+Request URI:	https://httpbin.org/get?page=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	page=2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:55 GMT
+Content-Type: application/json
+Content-Length: 403
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "page": "2"
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff82-2b4519c36985445922bef9a7"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/get?page=2"
+}
+2026-01-15 20:23:56.609 [main] INFO  com.reqres.tests.GetUsersAPITest - Response Status Code: 200
+2026-01-15 20:23:56.609 [main] INFO  com.reqres.tests.GetUsersAPITest - Test passed: Retrieved users from page 2
+2026-01-15 20:23:56.611 [main] INFO  com.reqres.tests.GetUsersAPITest - Starting test: Get non-existent user
+Request method:	GET
+Request URI:	https://httpbin.org/get?id=9999
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=9999
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:53:57 GMT
+Content-Type: application/json
+Content-Length: 405
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "9999"
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff85-7d2b8b6b4657972950453bf9"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/get?id=9999"
+}
+2026-01-15 20:23:59.117 [main] INFO  com.reqres.tests.GetUsersAPITest - Response Status Code: 200
+2026-01-15 20:23:59.117 [main] INFO  com.reqres.tests.GetUsersAPITest - Test passed: Non-existent user query returned 200
+2026-01-15 20:23:59.119 [main] INFO  com.reqres.tests.GetUsersAPITest - Starting test: Get user by ID
+Request method:	GET
+Request URI:	https://httpbin.org/get?id=1
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=1
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:00 GMT
+Content-Type: application/json
+Content-Length: 399
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "1"
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff87-367b7ef811f58ad500ebbe22"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/get?id=1"
+}
+2026-01-15 20:24:01.814 [main] INFO  com.reqres.tests.GetUsersAPITest - Response Status Code: 200
+2026-01-15 20:24:01.815 [main] INFO  com.reqres.tests.GetUsersAPITest - Test passed: Retrieved user 1
+2026-01-15 20:24:01.817 [main] INFO  com.reqres.tests.GetUsersAPITest - Starting test: Metadata validation
+Request method:	GET
+Request URI:	https://httpbin.org/get?page=1
+Proxy:			<none>
+Request params:	<none>
+Query params:	page=1
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:02 GMT
+Content-Type: application/json
+Content-Length: 403
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "page": "1"
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff8a-798cabd73ff5a6ac07b8b90d"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/get?page=1"
+}
+2026-01-15 20:24:03.982 [main] INFO  com.reqres.tests.GetUsersAPITest - Response Status Code: 200
+2026-01-15 20:24:03.983 [main] INFO  com.reqres.tests.GetUsersAPITest - Test passed: Metadata is valid
+2026-01-15 20:24:03.984 [main] INFO  com.reqres.tests.CreateUserAPITest - Starting test: Create multiple users
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Alice Johnson",
+    "job": "Data Analyst"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:05 GMT
+Content-Type: application/json
+Content-Length: 592
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"name\": \"Alice Johnson\",\n  \"job\": \"Data Analyst\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "54",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff8c-44b91cc6525a18787ae69459"
+    },
+    "json": {
+        "job": "Data Analyst",
+        "name": "Alice Johnson"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:24:06.400 [main] INFO  com.reqres.tests.CreateUserAPITest - Created user 1: Alice Johnson
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Bob Wilson",
+    "job": "Backend Developer"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:08 GMT
+Content-Type: application/json
+Content-Length: 596
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"name\": \"Bob Wilson\",\n  \"job\": \"Backend Developer\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "56",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff8f-2ce99bab72454e996409d1ab"
+    },
+    "json": {
+        "job": "Backend Developer",
+        "name": "Bob Wilson"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:24:09.532 [main] INFO  com.reqres.tests.CreateUserAPITest - Created user 2: Bob Wilson
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Carol White",
+    "job": "Frontend Developer"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:10 GMT
+Content-Type: application/json
+Content-Length: 600
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"name\": \"Carol White\",\n  \"job\": \"Frontend Developer\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "58",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff92-1a2a9dd6144f1fb07ffdc739"
+    },
+    "json": {
+        "job": "Frontend Developer",
+        "name": "Carol White"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:24:11.690 [main] INFO  com.reqres.tests.CreateUserAPITest - Created user 3: Carol White
+2026-01-15 20:24:11.690 [main] INFO  com.reqres.tests.CreateUserAPITest - Test passed: Multiple users created successfully
+2026-01-15 20:24:11.691 [main] INFO  com.reqres.tests.CreateUserAPITest - Starting test: Create user response structure validation
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Jane Smith",
+    "job": "DevOps Engineer"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:12 GMT
+Content-Type: application/json
+Content-Length: 592
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"name\": \"Jane Smith\",\n  \"job\": \"DevOps Engineer\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "54",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff94-0ffb3b7766577adc4843d90d"
+    },
+    "json": {
+        "job": "DevOps Engineer",
+        "name": "Jane Smith"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:24:13.844 [main] INFO  com.reqres.tests.CreateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:13.845 [main] INFO  com.reqres.tests.CreateUserAPITest - Test passed: Create user response structure is valid
+2026-01-15 20:24:13.846 [main] INFO  com.reqres.tests.CreateUserAPITest - Starting test: Create user with empty job
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Test User",
+    "job": ""
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:15 GMT
+Content-Type: application/json
+Content-Length: 560
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"name\": \"Test User\",\n  \"job\": \"\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "38",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff96-6566fe4a1900ce62630dfc62"
+    },
+    "json": {
+        "job": "",
+        "name": "Test User"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:24:16.523 [main] INFO  com.reqres.tests.CreateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:16.524 [main] INFO  com.reqres.tests.CreateUserAPITest - Test passed: User created with empty job field
+2026-01-15 20:24:16.525 [main] INFO  com.reqres.tests.CreateUserAPITest - Starting test: Create user with special characters
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "John O'Brien-Smith",
+    "job": "Software Engineer (QA)"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:17 GMT
+Content-Type: application/json
+Content-Length: 622
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"name\": \"John O'Brien-Smith\",\n  \"job\": \"Software Engineer (QA)\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "69",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff99-3752886f56a9a58777a880ca"
+    },
+    "json": {
+        "job": "Software Engineer (QA)",
+        "name": "John O'Brien-Smith"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:24:19.094 [main] INFO  com.reqres.tests.CreateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:19.094 [main] INFO  com.reqres.tests.CreateUserAPITest - Test passed: User created with special characters
+2026-01-15 20:24:19.096 [main] INFO  com.reqres.tests.CreateUserAPITest - Starting test: Create user with valid data
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "John Doe",
+    "job": "QA Engineer"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:19 GMT
+Content-Type: application/json
+Content-Length: 580
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"name\": \"John Doe\",\n  \"job\": \"QA Engineer\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "48",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff9b-491bbb525899eea436883833"
+    },
+    "json": {
+        "job": "QA Engineer",
+        "name": "John Doe"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:24:21.034 [main] INFO  com.reqres.tests.CreateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:21.035 [main] INFO  com.reqres.tests.CreateUserAPITest - Response Body: {
+  "args": {}, 
+  "data": "{\n  \"name\": \"John Doe\",\n  \"job\": \"QA Engineer\"\n}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "application/json", 
+    "Accept-Encoding": "gzip,deflate", 
+    "Content-Length": "48", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)", 
+    "X-Amzn-Trace-Id": "Root=1-6968ff9b-491bbb525899eea436883833"
+  }, 
+  "json": {
+    "job": "QA Engineer", 
+    "name": "John Doe"
+  }, 
+  "origin": "42.104.218.61", 
+  "url": "https://httpbin.org/post"
+}
+
+2026-01-15 20:24:21.035 [main] INFO  com.reqres.tests.CreateUserAPITest - Test passed: User created successfully
+2026-01-15 20:24:21.036 [main] INFO  com.reqres.tests.UpdateUserAPITest - Starting test: Multiple consecutive updates
+Request method:	PUT
+Request URI:	https://httpbin.org/put
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 6,
+    "name": "First Update",
+    "job": "Developer"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:22 GMT
+Content-Type: application/json
+Content-Length: 611
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"id\": 6,\n  \"name\": \"First Update\",\n  \"job\": \"Developer\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "61",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ff9d-2b4f89f94d8f3a770269529b"
+    },
+    "json": {
+        "id": 6,
+        "job": "Developer",
+        "name": "First Update"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/put"
+}
+2026-01-15 20:24:23.558 [main] INFO  com.reqres.tests.UpdateUserAPITest - Update 1 - Status: 200
+Request method:	PUT
+Request URI:	https://httpbin.org/put
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 6,
+    "name": "Second Update",
+    "job": "Manager"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:25 GMT
+Content-Type: application/json
+Content-Length: 609
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"id\": 6,\n  \"name\": \"Second Update\",\n  \"job\": \"Manager\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "60",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffa1-7a4c000f6002440755fd3e3d"
+    },
+    "json": {
+        "id": 6,
+        "job": "Manager",
+        "name": "Second Update"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/put"
+}
+2026-01-15 20:24:26.401 [main] INFO  com.reqres.tests.UpdateUserAPITest - Update 2 - Status: 200
+Request method:	PUT
+Request URI:	https://httpbin.org/put
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 6,
+    "name": "Third Update",
+    "job": "Lead"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:27 GMT
+Content-Type: application/json
+Content-Length: 601
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"id\": 6,\n  \"name\": \"Third Update\",\n  \"job\": \"Lead\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "56",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffa3-5c4308ee1a93ad626e0aebfe"
+    },
+    "json": {
+        "id": 6,
+        "job": "Lead",
+        "name": "Third Update"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/put"
+}
+2026-01-15 20:24:28.384 [main] INFO  com.reqres.tests.UpdateUserAPITest - Update 3 - Status: 200
+2026-01-15 20:24:28.386 [main] INFO  com.reqres.tests.UpdateUserAPITest - Test passed: Multiple consecutive updates completed
+2026-01-15 20:24:28.387 [main] INFO  com.reqres.tests.UpdateUserAPITest - Starting test: Partial user update with PATCH
+Request method:	PATCH
+Request URI:	https://httpbin.org/patch
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "name": "Partially Updated Name",
+    "job": "Tech Lead"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:29 GMT
+Content-Type: application/json
+Content-Length: 633
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"id\": 2,\n  \"name\": \"Partially Updated Name\",\n  \"job\": \"Tech Lead\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "71",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffa4-59b7ca8f7f51572e00cd8f4a"
+    },
+    "json": {
+        "id": 2,
+        "job": "Tech Lead",
+        "name": "Partially Updated Name"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/patch"
+}
+2026-01-15 20:24:30.526 [main] INFO  com.reqres.tests.UpdateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:30.527 [main] INFO  com.reqres.tests.UpdateUserAPITest - Test passed: User 2 partially updated successfully
+2026-01-15 20:24:30.527 [main] INFO  com.reqres.tests.UpdateUserAPITest - Starting test: Update response structure validation
+Request method:	PUT
+Request URI:	https://httpbin.org/put
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "name": "Structure Test User",
+    "job": "Structure Test Job"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:30 GMT
+Content-Type: application/json
+Content-Length: 643
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"id\": 3,\n  \"name\": \"Structure Test User\",\n  \"job\": \"Structure Test Job\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "77",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffa6-1c2250373feeb2fa4c7e22a5"
+    },
+    "json": {
+        "id": 3,
+        "job": "Structure Test Job",
+        "name": "Structure Test User"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/put"
+}
+2026-01-15 20:24:32.225 [main] INFO  com.reqres.tests.UpdateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:32.225 [main] INFO  com.reqres.tests.UpdateUserAPITest - Test passed: Update response structure is valid
+2026-01-15 20:24:32.226 [main] INFO  com.reqres.tests.UpdateUserAPITest - Starting test: Update user with empty values
+Request method:	PUT
+Request URI:	https://httpbin.org/put
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 5,
+    "name": "",
+    "job": ""
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:32 GMT
+Content-Type: application/json
+Content-Length: 569
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"id\": 5,\n  \"name\": \"\",\n  \"job\": \"\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "40",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffa8-05a8ed000f9ce809481e54bb"
+    },
+    "json": {
+        "id": 5,
+        "job": "",
+        "name": ""
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/put"
+}
+2026-01-15 20:24:33.864 [main] INFO  com.reqres.tests.UpdateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:33.864 [main] INFO  com.reqres.tests.UpdateUserAPITest - Test passed: User updated with empty values
+2026-01-15 20:24:33.867 [main] INFO  com.reqres.tests.UpdateUserAPITest - Starting test: Full user update with PUT
+Request method:	PUT
+Request URI:	https://httpbin.org/put
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "name": "Updated User Name",
+    "job": "Senior Engineer"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:34 GMT
+Content-Type: application/json
+Content-Length: 633
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"id\": 2,\n  \"name\": \"Updated User Name\",\n  \"job\": \"Senior Engineer\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "72",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffaa-29abd76a4faa9db067f81214"
+    },
+    "json": {
+        "id": 2,
+        "job": "Senior Engineer",
+        "name": "Updated User Name"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/put"
+}
+2026-01-15 20:24:35.683 [main] INFO  com.reqres.tests.UpdateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:35.683 [main] INFO  com.reqres.tests.UpdateUserAPITest - Test passed: User 2 updated successfully
+2026-01-15 20:24:35.684 [main] INFO  com.reqres.tests.UpdateUserAPITest - Starting test: Update user with special characters
+Request method:	PUT
+Request URI:	https://httpbin.org/put
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 4,
+    "name": "O'Connor-Smith & Associates",
+    "job": "Manager (Senior) @ Tech Corp"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:36 GMT
+Content-Type: application/json
+Content-Length: 679
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"id\": 4,\n  \"name\": \"O'Connor-Smith & Associates\",\n  \"job\": \"Manager (Senior) @ Tech Corp\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "95",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffac-160d64f42a48cf1d07b632b4"
+    },
+    "json": {
+        "id": 4,
+        "job": "Manager (Senior) @ Tech Corp",
+        "name": "O'Connor-Smith & Associates"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/put"
+}
+2026-01-15 20:24:37.510 [main] INFO  com.reqres.tests.UpdateUserAPITest - Response Status Code: 200
+2026-01-15 20:24:37.510 [main] INFO  com.reqres.tests.UpdateUserAPITest - Test passed: User updated with special characters
+2026-01-15 20:24:37.512 [main] INFO  com.reqres.tests.DeleteUserAPITest - Starting test: Delete and recreate user
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=10
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=10
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:37 GMT
+Content-Type: application/json
+Content-Length: 467
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "10"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffad-6b86ee6b3f8bced35a03c843"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=10"
+}
+2026-01-15 20:24:39.050 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete Response Status: 200
+Request method:	POST
+Request URI:	https://httpbin.org/post
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Test User",
+    "job": "Test Job"
+}
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:39 GMT
+Content-Type: application/json
+Content-Length: 576
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        
+    },
+    "data": "{\n  \"name\": \"Test User\",\n  \"job\": \"Test Job\"\n}",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Length": "46",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffaf-09500ab63cab58a668aaa5ef"
+    },
+    "json": {
+        "job": "Test Job",
+        "name": "Test User"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/post"
+}
+2026-01-15 20:24:40.576 [main] INFO  com.reqres.tests.DeleteUserAPITest - Create Response Status: 200
+2026-01-15 20:24:40.577 [main] INFO  com.reqres.tests.DeleteUserAPITest - Test passed: User deleted and recreated successfully
+2026-01-15 20:24:40.578 [main] INFO  com.reqres.tests.DeleteUserAPITest - Starting test: Delete non-existent user
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=9999
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=9999
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:40 GMT
+Content-Type: application/json
+Content-Length: 471
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "9999"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffb0-0755990f4f0b3c79146b542f"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=9999"
+}
+2026-01-15 20:24:42.115 [main] INFO  com.reqres.tests.DeleteUserAPITest - Response Status Code: 200
+2026-01-15 20:24:42.116 [main] INFO  com.reqres.tests.DeleteUserAPITest - Test passed: Delete query returned 200
+2026-01-15 20:24:42.117 [main] INFO  com.reqres.tests.DeleteUserAPITest - Starting test: Delete response structure validation
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=16
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=16
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:42 GMT
+Content-Type: application/json
+Content-Length: 467
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "16"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffb2-2ddc76d1234aa2f7084826ad"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=16"
+}
+2026-01-15 20:24:43.658 [main] INFO  com.reqres.tests.DeleteUserAPITest - Response Status Code: 200
+2026-01-15 20:24:43.659 [main] INFO  com.reqres.tests.DeleteUserAPITest - Test passed: Delete response structure is valid
+2026-01-15 20:24:43.660 [main] INFO  com.reqres.tests.DeleteUserAPITest - Starting test: Delete user successfully
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:43 GMT
+Content-Type: application/json
+Content-Length: 465
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "2"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffb3-35041a1855d986065e160b7b"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=2"
+}
+2026-01-15 20:24:45.199 [main] INFO  com.reqres.tests.DeleteUserAPITest - Response Status Code: 200
+2026-01-15 20:24:45.199 [main] INFO  com.reqres.tests.DeleteUserAPITest - Test passed: User 2 deleted successfully
+2026-01-15 20:24:45.201 [main] INFO  com.reqres.tests.DeleteUserAPITest - Starting test: Delete with different user IDs
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=4
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=4
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:46 GMT
+Content-Type: application/json
+Content-Length: 465
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "4"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffb5-000fccb109a311cf41aee360"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=4"
+}
+2026-01-15 20:24:48.097 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 4 - Status: 200
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=5
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=5
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:48 GMT
+Content-Type: application/json
+Content-Length: 465
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "5"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffb8-27d714ee0644ebc94b13293f"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=5"
+}
+2026-01-15 20:24:49.687 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 5 - Status: 200
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=6
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:50 GMT
+Content-Type: application/json
+Content-Length: 465
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "6"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffba-03fbd7570ee002062429edea"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=6"
+}
+2026-01-15 20:24:51.341 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 6 - Status: 200
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=7
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=7
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:51 GMT
+Content-Type: application/json
+Content-Length: 465
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "7"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffbb-5ff34dfc166210ed62e30332"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=7"
+}
+2026-01-15 20:24:52.936 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 7 - Status: 200
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=8
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=8
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:53 GMT
+Content-Type: application/json
+Content-Length: 465
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "8"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffbd-355b54e264471e615c6ec5dc"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=8"
+}
+2026-01-15 20:24:54.506 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 8 - Status: 200
+2026-01-15 20:24:54.506 [main] INFO  com.reqres.tests.DeleteUserAPITest - Test passed: Multiple users deleted successfully
+2026-01-15 20:24:54.507 [main] INFO  com.reqres.tests.DeleteUserAPITest - Starting test: Multiple sequential deletes
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=11
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=11
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:54 GMT
+Content-Type: application/json
+Content-Length: 467
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "11"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffbe-2aaed9262c48455e39bf2a01"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=11"
+}
+2026-01-15 20:24:56.103 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 11 - Status: 200
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=12
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=12
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:56 GMT
+Content-Type: application/json
+Content-Length: 467
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "12"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffc0-3f58ec4c2e21d2826c72ee7a"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=12"
+}
+2026-01-15 20:24:57.703 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 12 - Status: 200
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=13
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=13
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:58 GMT
+Content-Type: application/json
+Content-Length: 467
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "13"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffc2-44352bdf3b5011784dd052ea"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=13"
+}
+2026-01-15 20:24:59.226 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 13 - Status: 200
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=14
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=14
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:54:59 GMT
+Content-Type: application/json
+Content-Length: 467
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "14"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffc3-70d8f0a73324aa0913173172"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=14"
+}
+2026-01-15 20:25:00.774 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 14 - Status: 200
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=15
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=15
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:55:01 GMT
+Content-Type: application/json
+Content-Length: 467
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "15"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffc5-6d3a13f74717773a73cd38a8"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=15"
+}
+2026-01-15 20:25:02.441 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete user 15 - Status: 200
+2026-01-15 20:25:02.441 [main] INFO  com.reqres.tests.DeleteUserAPITest - Test passed: 5 users deleted sequentially
+2026-01-15 20:25:02.442 [main] INFO  com.reqres.tests.DeleteUserAPITest - Starting test: Verify user is deleted
+Request method:	DELETE
+Request URI:	https://httpbin.org/delete?id=3
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=3
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:55:03 GMT
+Content-Type: application/json
+Content-Length: 465
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "3"
+    },
+    "data": "",
+    "files": {
+        
+    },
+    "form": {
+        
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffc6-415bb06a4414a923744ac19f"
+    },
+    "json": null,
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/delete?id=3"
+}
+2026-01-15 20:25:05.101 [main] INFO  com.reqres.tests.DeleteUserAPITest - Delete Response Status: 200
+Request method:	GET
+Request URI:	https://httpbin.org/get?id=3
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=3
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 15 Jan 2026 14:55:06 GMT
+Content-Type: application/json
+Content-Length: 399
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+    "args": {
+        "id": "3"
+    },
+    "headers": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.17)",
+        "X-Amzn-Trace-Id": "Root=1-6968ffc9-6eaeae7b5885bfa0705011ba"
+    },
+    "origin": "42.104.218.61",
+    "url": "https://httpbin.org/get?id=3"
+}
+2026-01-15 20:25:07.417 [main] INFO  com.reqres.tests.DeleteUserAPITest - Get Response Status: 200
+2026-01-15 20:25:07.418 [main] INFO  com.reqres.tests.DeleteUserAPITest - Test passed: Delete operation verified
