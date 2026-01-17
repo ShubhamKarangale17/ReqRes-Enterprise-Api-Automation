@@ -1,26 +1,50 @@
-.idea/
+# ===== Java / Maven =====
 target/
 *.class
 *.jar
 *.log
-*.swp
-*.swo
-*~
-.DS_Store
+
+# ===== Eclipse =====
 .classpath
 .project
 .settings/
+
+# ===== IntelliJ =====
+.idea/
 *.iml
 *.iws
 *.ipr
+
+# ===== Test Reports =====
+test-output/
+
+# ===== Allure =====
+allure-results/
+.allure/
+
+# ===== Node / Build =====
 node_modules/
 build/
 dist/
+
+# ===== Native / Binary =====
 *.o
 *.so
 *.dll
 *.dylib
+
+# ===== Gradle / Cache =====
 .gradle/
 .m2/
 .ivy2/
 .cache/
+
+# ===== Logs =====
+logs/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
