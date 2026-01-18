@@ -3,27 +3,31 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.reqres</groupId>
-    <artifactId>api-automation-framework</artifactId>
+    <artifactId>reqres-enterprise-api-automation</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>ReqRes API Automation Framework</name>
-    <description>API Automation Framework using Maven, TestNG, and RestAssured</description>
+    <name>ReqRes Enterprise API Automation Framework</name>
+    <description>Enterprise-grade API automation framework using Java, RestAssured, TestNG, Maven, and Allure</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+
         <testng.version>7.9.0</testng.version>
-        <rest-assured.version>5.4.0</rest-assured.version>
+        <restassured.version>5.4.0</restassured.version>
         <log4j.version>2.22.1</log4j.version>
+        <allure.version>2.25.0</allure.version>
     </properties>
 
     <dependencies>
-        <!-- TestNG for unit testing -->
+
+        <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -31,23 +35,29 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- RestAssured for API testing -->
+        <!-- Rest Assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>${rest-assured.version}</version>
+            <version>${restassured.version}</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- RestAssured JSON Path support -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-path</artifactId>
-            <version>${rest-assured.version}</version>
+            <version>${restassured.version}</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- Log4j 2 for logging -->
+        <!-- Logging -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -57,81 +67,63 @@
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>${log4j.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- SLF4J to Log4j 2 binding -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>${log4j.version}</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- JSON Simple for JSON processing -->
+        <!-- JSON utility -->
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Allure TestNG Adapter -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin -->
+
+            <!-- Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>17</source>
-                    <target>17</target>
                     <release>17</release>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
 
-            <!-- Maven Surefire Plugin - CRITICAL for TestNG -->
+            <!-- Surefire (TestNG Runner) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <!-- Use TestNG provider -->
-                    <testNGArtifactName>org.testng:testng</testNGArtifactName>
-                    <!-- Point to TestNG XML suite -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>TestRunner.xml</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <!-- Serial execution -->
-                    <parallel>false</parallel>
-                    <threadCount>1</threadCount>
-                    <!-- Ensure tests are not skipped -->
-                    <skipTests>false</skipTests>
-                    <!-- Use legacy classloader to avoid package scanning issues -->
                     <useSystemClassLoader>true</useSystemClassLoader>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.testng</groupId>
-                        <artifactId>testng</artifactId>
-                        <version>${testng.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
 
-            <!-- Maven Resources Plugin -->
+            <!-- Allure Report Plugin -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.3.1</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.12.0</version>
             </plugin>
+
         </plugins>
     </build>
 
