@@ -1,6 +1,6 @@
 # 🚀 ReqRes Enterprise API Automation Framework
 
-![Build Status](https://github.com/ShubhamKarangale17/ReqRes-Enterprise-Api-Automation/actions/workflows/maven.yml/badge.svg)
+![Build Status](https://github.com/ShubhamKarangale17/ReqRes-Enterprise-Api-Automation/actions/workflows/api-automation-tests.yml/badge.svg?branch=main)
 ![Java](https://img.shields.io/badge/Java-17-007396?logo=java&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-Build-C71A36?logo=apachemaven&logoColor=white)
 ![TestNG](https://img.shields.io/badge/TestNG-Framework-0A66C2)
