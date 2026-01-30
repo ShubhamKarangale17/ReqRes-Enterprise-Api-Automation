@@ -82,7 +82,6 @@ public class CreateUserAPITest extends BaseTest {
      * Test create user with special characters
      * Validates:
      * - System handles special characters correctly
-     * - Name is echoed back in response
      */
     @Test(description = "Test create user with special characters")
     public void testCreateUserWithSpecialCharacters() {

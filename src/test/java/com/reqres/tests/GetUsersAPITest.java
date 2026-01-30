@@ -17,8 +17,8 @@ import static org.testng.Assert.*;
  * - Get all users with specific page number
  * - Get user by ID
  * - Get non-existent user
- * - Pagination validation
- * - Response structure validation
+ * - Pagination Validation
+ * - Response Structure Validation
  */
 public class GetUsersAPITest extends BaseTest {
 

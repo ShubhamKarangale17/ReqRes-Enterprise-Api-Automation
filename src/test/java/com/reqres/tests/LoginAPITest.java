@@ -105,7 +105,7 @@ public class LoginAPITest extends BaseTest {
      * Test login response structure
      * Validates:
      * - Response is valid JSON
-     * - Response contains expected fields
+     * - Response Contains expected fields
      */
     @Test(description = "Test login response structure")
     public void testLoginResponseStructure() {
